@@ -6,15 +6,16 @@ body, html {
   background-repeat: repeat;
   background-position: center center;
   background-attachment: fixed;
-  color: #1b1b1b;
+  color: #041F60;
   line-height: 1.7;
+  font-family: 'Outfit', sans-serif;
 }
 
 .container {
   max-width: 80rem;
   margin: 0 auto;
   padding: 2em;
-  background-color: rgba(245, 248, 240, 0.7); /* Adjust the alpha value as needed */
+  background-color: rgba(245, 248, 240, 0.7);
 }
 
 #navbar {
@@ -22,7 +23,7 @@ body, html {
   justify-content: space-around;
   align-items: center;
   min-height: 60px;
-  background-color: #fff;
+  background-color: #041F60;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -43,7 +44,7 @@ body, html {
   display: block;
   text-decoration: none;
   padding: 1em;
-  color: #666;
+  color: #E2B34B;
 }
 
 #navbar a:hover {
@@ -54,33 +55,47 @@ body, html {
 
 .hero {
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.493)), url(/Images/20210729_155145.jpg) no-repeat center / cover;
   display: flex;
 }
 
+
 .hero h1 {
-  font-family: 'Lavishly Yours', cursive;
-  font-size: clamp(8rem, 9vw, 12rem);
-  line-height: 1.2;
   position: absolute;
-  top: 50%;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  position: absolute;
+  top:54%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   z-index: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
+
 
 .section-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lavishly Yours', cursive;
   font-size: 6rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color:#E2B34B;
 }
 
 .details-container {
@@ -99,7 +114,6 @@ body, html {
 }
 
 .details-section {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   text-align: center;
 
@@ -127,13 +141,15 @@ body, html {
 }
 
 .section-get-there h1 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+
+}
+
+.section-get-there img {
   margin: 0;
 }
 
 .section-get-there p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -271,7 +287,6 @@ section#timeline article:nth-child(5) div.inner h2:after {
 section#timeline article div.inner span.date,
 section#timeline article div.inner h2,
 section#timeline article div.inner p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -367,7 +382,6 @@ main {
 
 
 .topic {
-  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   margin: 0;
 }
