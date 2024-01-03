@@ -67,7 +67,7 @@ body, html {
 
 .hero h1 {
   position: absolute;
-  top: 41%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -75,21 +75,21 @@ body, html {
   z-index: 2;
   z-index: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 4rem;
-  line-height: 1.2;
-  letter-spacing: 2px;
+  font-size: clamp(1.5rem, 6vw + 0.75rem, 10rem);
+  white-space: nowrap;
 }
 
 .hero p {
   position: absolute;
-  top:54%;
+  top:58%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   z-index: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw + 0.75rem, 5.5rem);
+  white-space: nowrap;
   line-height: 1.2;
 }
 
@@ -421,97 +421,4 @@ main {
 
 .answer a:hover {
   text-decoration: underline;
-}
-
-@media (min-width: 320px) {
-  .hero {
-    min-height: 100vh;
-  }
-  .hero h1 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 4rem;
-    line-height: 1.2;
-    letter-spacing: 2px;
-  }
-  .hero p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-}
-
-@media (min-width: 576px) {
-  .hero {
-    min-height: 80vh;
-  }
-  .hero h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 4rem;
-    line-height: 1.2;
-    letter-spacing: 2px;
-  }
-  .hero p {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-}
-
-@media (min-width: 576px) {
-  .hero {
-    min-height: 80vh;
-  }
-  .hero h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 4rem;
-    line-height: 1.2;
-    letter-spacing: 2px;
-  }
-  .hero p {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
 }
