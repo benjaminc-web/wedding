@@ -17,16 +17,25 @@ body, html {
   background-color: rgba(245, 248, 240, 0.7);
 }
 
+
 #navbar {
-  position: absolute;
+  position: relative;
   z-index: 1;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(255, 255, 255, 0.0);
-  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  top: 0;
 }
 
-#navbar ul {
+#navbar.sticky{
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#navbar ul, #navbar.sticky {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -37,19 +46,24 @@ body, html {
 #navbar li {
   flex: 1;
   text-align: center;
+  font-size: 1em;
 }
 
 #navbar a {
   display: block;
   text-decoration: none;
   padding: 1em;
-  color: #ffffff;
+  color: #242424;
 }
 
 #navbar a:hover {
   color: #242424;
   background-color: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+#navbar li:not(:last-child) {
+  border-right: 1px solid #ccc;
 }
 
 
@@ -58,16 +72,14 @@ body, html {
   z-index: 0;
   max-width: 100%;
   min-height: 90vh;
-  background: url(/Images/20210729_155145.jpg) no-repeat center / cover;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  background: url(/Images/hero.jpg) no-repeat center / cover;
   background-size: cover;
 }
 
 
 .hero h1 {
   position: absolute;
-  top: 40%;
+  top: 59%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -75,20 +87,20 @@ body, html {
   z-index: 2;
   z-index: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: clamp(2.7rem, 5vw + 0.75rem, 10rem);
+  font-size: clamp(2.7rem, 5vw + 1rem, 10rem);
   white-space: nowrap;
 }
 
 .hero p {
   position: absolute;
-  top:58%;
+  top:74%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   z-index: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: clamp(1rem, 2.5vw + 0.75rem, 5.5rem);
+  font-size: clamp(1rem, 3vw + 0.75rem, 5.5rem);
   white-space: nowrap;
   line-height: 1.2;
 }
@@ -104,8 +116,6 @@ body, html {
 }
 
 .about-content {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   text-align: center;
   font-size: 1.2rem;
 }
@@ -120,6 +130,7 @@ body, html {
   align-items: center;
   color:#E2B34B;
   font-size: clamp(3.5rem, 4vw + 0.75rem, 10rem);
+  text-shadow: 2px 2px 4px rgba(224, 224, 224, 0.5);
 }
 
 .details-container {
@@ -198,11 +209,16 @@ body, html {
 
 
 .timeline-box h2 {
-  background-color: #e74c3c; /* Adjust the background color for each h2 */
-  color: #fff; /* Adjust the text color for better contrast */
-  padding: 10px; /* Adjust the padding for better appearance */
-  margin: 0; /* Reset margin to remove default spacing */
-  border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.timeline-box p {
+  font-size: 1.2rem;
+  
 }
 
 .timeline-box:nth-child(1) h2 {
@@ -374,7 +390,13 @@ body, html {
   }
 
   .timeline-container {
-    padding: 0 10% 0 10%;
+    padding: 0 5% 0 5%;
+  }
+
+  .hero h1 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
   }
 
 }
@@ -403,6 +425,15 @@ body, html {
   .details-content {
     margin-bottom: 8%;
   }
+  .timeline-container {
+    padding: 0 10% 0 10%;
+  }
+  .hero h1 {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {

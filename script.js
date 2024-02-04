@@ -18,3 +18,17 @@ document.querySelectorAll('.open').forEach(function (openElement) {
     trigger.classList.toggle('faq-o');
   });
 });
+// script.js
+
+window.onscroll = function() {
+  var navbar = document.getElementById("navbar");
+  var stickyClass = "sticky";
+
+  if (window.pageYOffset > 100) {
+    if (!navbar.classList.contains(stickyClass)) {
+      navbar.classList.add(stickyClass);
+    }
+  } else {
+    navbar.classList.remove(stickyClass);
+  }
+};
