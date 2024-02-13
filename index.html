@@ -1,244 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marty & Ben Wedding</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="navbar"> 
-        <ul> 
-          <li><a href="#Home">Home</a></li> 
-          <li><a href="#tell-me-more">Tell me more</a></li> 
-          <li><a href="#schedule">Schedule</a></li> 
-          <li><a href="#faqs">FAQs</a></li>
-        </ul>
-        </div>
-    <div id="home"></div>
-      <div class="hero">
-        <h1>MARTYNA & BEN</h1>
-        <p>AUGUST 3RD 2024 • POLAND</p>
-      </div>
-    
-    <div class="container">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Password Protected</title>
 
-      <h1 class="section-title">Our story!</h1>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
 
-      <div class="about-container">
-        <div class="about-content">
-          <img src="Images/1.png" alt="" class="marty">
-          <h1 class="marty">Martyna</h1>
-          <p> After a last-minute decision to study abroad, Martyna packed her bags, music books and flute and spent a year in Alicante, Spain. It was there where her love for music, Spanish culture and the beach combined and where she met Ben in the kitchen of their shared apartment! </p>
-        </div>
-      <div class="about-content">
-          <img src="Images/2.png" alt="" class="ben">
-          <h1 class="ben">Ben</h1>
-          <p>In 2020, Ben moved to Poland where he embraced the Polish culture and started learning the language. After three years, he decided to propose to Martyna on a very cold January day at a local park!</p>
-        </div>
-      </div>
+        <style>
+            *,
+            *:after,
+            *:before {
+                box-sizing: border-box;
+            }
+            body,
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                background: #f2f2f2;
+                color: #2D3737;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100%;
+            }
 
-      <div id="tell-me-more"></div>
-    <h1 class="section-title">Details!</h1>
-    <div class="details-container">
-            <div class="details-content">
-                <img class="where-icon" src="Images/where.png" alt="where-icon">
-                <h1>Where</h1>
-                  <p>The ceremony will take place at 1700 at Kolegialna 9, 09-402 Płock at the registry office. This will be followed by the reception at Różany Dworek Wedding House, Wola Łącka 10, 09-520 Wola Łącka.</p>
-                  <p>Płock, located in central Poland along the Vistula River, is a historic city known for its rich cultural heritage, medieval architecture, and vibrant atmosphere. </p>
-            </div>
-            <div class="details-content">
-                <img class="when-icon" src="Images/when.png" alt="when-icon">
-                <h1>When</h1>
-                <p>The wedding is set for Saturday, 3rd August 2024, promising a day filled with joy and celebration. </p>
-            </div>
-            <div class="details-content">
-              <img class="when-icon" src="Images/suit.png" alt="wear-icon">
-              <h1>Wear</h1>
-              <p>
-                Please wear formal attire. Prepare to dazzle in your finest suits and dresses as we come together to celebrate this joyous occasion. </p>
-                <p>It's a day to dress to impress and create beautiful memories that will last a lifetime.</p>
-          </div>
-        </div>
-        <h1 class="section-title">Transport!</h1>
+            .protected {
+                background: #fff;
+                -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                border-radius: 3px;
+                min-width: 500px;
 
-            <div class="transport-container">
-                <div class="transport-content">
-                    <img class="plane-icon" src="Images/airplane.png" alt="plane-icon">
-                    <h1>By plane</h1>
-                    <p>The best airports to get to Płock are either Warsaw Chopin Airport (WAW) or Warsaw Modlin (WMI). From Warsaw, you can get a direct train to Kutno and change to Płock.</p>
+            }
+            .protected__content {
+                padding: 24px 28px;
+            }
+            .protected__content__heading {
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0 0 12px;
+                line-height: 1;
+            }
+            .protected__alert {
+                display: none;
+                border-bottom: 1px solid transparent;
+                border-radius: 3px 3px 0 0;
+                padding: 12px 14px;
+                color: #a94442;
+                background-color: #f2dede;
+                border-color: #ebccd1;
+            }
+            .protected__content__input {
+                display: block;
+                border: solid 1px #ccc;
+                padding: 12px 14px;
+                -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                font-size: 16px;
+                width: 100%;
+                border-radius: 3px;
 
-                    <p>For guests travelling from England here are some options on <a href="https://www.google.com/travel/flights/search?tfs=CBwQAhoyEgoyMDI0LTA4LTAzKABABkgNUABYDGoMCAMSCC9tLzA0anBscgwIAxIIL20vMDgxbV9AAUgBcAGCAQsI____________AZgBAg&curr=GBP">Friday</a>
-                    and <a href="https://www.google.com/travel/flights/search?tfs=CBwQAhoqEgoyMDI0LTA4LTAyKABqDAgDEggvbS8wNGpwbHIMCAMSCC9tLzA4MW1fQAFIAXABggELCP___________wGYAQI&tfu=EgYIAxAAGAA&curr=GBP">Saturday</a> to both of Warsaw's airports.</p>
-                    
-                </div>
-                <div class="transport-content">
-                    <img class="car-icon" src="Images/car.png" alt="car">
-                    <h1>By car</h1>
-                    <p>If you prefer the flexibility of traveling by car, reaching Płock is convenient as it is well-connected by roadways. </p>
-                      <p>
-                      From Warsaw to Płock it takes roughly 1.5 to 2 hours by car.
-                    </p>
-                  
-                </div>
-            </div>
-            <div id="schedule"></div>
-              <h1 class="section-title">Schedule!</h1>
-              
-              <div class="timeline-container">
-                <div class="timeline-box">
-                  <div class="timeline-box-content">
-                  <h2>1700 - Ceremony</h2>
-                  <p>Join us as we get married!</p>
-                </div>
-              </div>
+                margin-bottom: 12px;
+            }
+            .protected__content__input:focus {
+                outline: none;
+                border-color: #228843;
+            }
+            .protected__content__btn {
+                background-color: #228843;
+                border-radius: 3px;
+                cursor: pointer;
+                border: none;
+                color: #fff;
+                padding: 12px 14px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
 
-                <div class="timeline-box">
-                  <div class="timeline-box-content">
-                    <h2>1830 - Welcoming the Newlyweds</h2>
-                    <p>Bread, salt and wine to celebrate the newlyweds!</p>
-                </div>
-              </div>
+            }
+            .protected__content__btn:hover {
+                background-color: #1C6D36;
+            }
 
-                <div class="timeline-box">
-                  <div class="timeline-box-content">
-                    <h2>1900 - Meal #1</h2>
-                    <p>Soups & main meal</p>
-                </div>
-              </div>
+        </style>
 
-                <div class="timeline-box">
-                  <div class="timeline-box-content">
-                    <h2>2000 - First Dance</h2>
-                    <p>Please join us after on the dance floor!!</p>
-                </div>
-              </div>
-          
-              <div class="timeline-box">
-                <div class="timeline-box-content">
-                  <h2>2100 - Cake</h2>
-                  <p>Let them eat cake!</p>
-              </div>
-            </div>
+    </head>
 
-              <div class="timeline-box">
-                <div class="timeline-box-content">
-                  <h2>2200 - Meal #2</h2>
-                  <p>More tasty dishes!</p>
-              </div>
-            </div>
+    <body>
 
-              <div class="timeline-box">
-                <div class="timeline-box-content">
-                  <h2>0000 - Meal #3</h2>
-                  <p>More food for an energy boost!</p>
-              </div>
-            </div>
-
-              <div class="timeline-box">
-                <div class="timeline-box-content">
-                  <h2>0300 - Carriages</h2>
-                  <p>Reception finishes and minibus pick up!</p>
-              </div>
+        <div class="protected">
+            <div class="protected__alert" data-id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" data-id="password" type="password" placeholder="password"/>
+                <button data-id="button" type="button" class="protected__content__btn">Continue</button>
             </div>
         </div>
 
-        
-        <div id="faqs"></div>
-              <h1 class="section-title">Questions?</h1>
-<div id="tell-me-more"></div>
-<div class="questions-container">
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">1. What is the dress code for the wedding?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer"> 
-      For the joyous occasion, we encourage you to embrace formal attire, allowing you to showcase your elegant style. However, above all, prioritize your comfort. Feel free to dress to impress while incorporating your unique personal touch, making the celebration even more special with your individuality and charm. </p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">2. Can I bring a plus one to the wedding?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">We truly appreciate your understanding as we adhere to our finalized guest list. Your support is invaluable, and we look forward to celebrating this special day with you. Thank you for your consideration and cooperation. <a href="#">Read More</a></p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">3. Are children allowed at the wedding?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">Absolutely, children are more than welcome to be part of our celebration. We look forward to sharing the joy with everyone, both young and old.</p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">4. What time should guests arrive for the ceremony?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">Plan to arrive 15-30 minutes before the ceremony, which kicks off at 170. We can't wait to share this special moment with you! </p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">5. Can I take photos during the ceremony and reception?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">Capture the magic of the day by taking photos during the ceremony and reception. Please make sure phones are muted and no flashes on the cameras! </p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">6. Will there be vegetarian or special dietary options available?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">Rest assured, we've got your dietary needs covered. Vegetarian and special dietary options will be available—please let us know if you have any specific requirements. </p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">7. Is there a gift registry, and where can I find it?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">In Polish culture, money in an envelope is usually given in lieu of gifts. </p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">8. How can I RSVP to the wedding?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">RSVPing is easy! Just message or WhatsApp us! </p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">9. Is there a shuttle service provided to and from the venue?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">While we don't provide a shuttle service to the ceremony. We are organising some minibuses during the reception to get you to your hotels!</p>
-  </div>
-  
-  <div class="topic">
-    <div class="open">
-      <h2 class="question">10. Are there any specific traditions or customs planned for the wedding?</h2>
-      <span class="faq-t"></span>
-    </div>
-    <p class="answer">Get ready to join in the fun! We have a few special traditions planned, and we can't wait for you to be a part of them. More details to follow!</p>
-  </div>
-      </div>
-</div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+        <script type="text/javascript">
+            "use strict"
+            var button = document.querySelectorAll('[data-id="button"]')
+            var password = document.querySelectorAll('[data-id="password"]')
 
-              <a href="https://www.flaticon.com/free-icons/where" title="where icons">Where icons created by kerismaker - Flaticon</a>
+            function login(secret) {
+                var hash = sha1(secret)
+                var url = hash + "/index.html"
+                var alert = document.querySelectorAll('[data-id="alert"]')
 
-              <script src="script.js"></script>
-            </body>
+                var request = new XMLHttpRequest()
+                request.open('GET', url, true)
 
+                request.onload = function () {
+                    if (request.status >= 200 && request.status < 400) {
+                        window.location = url
+                    } else {
+                        parent.location.hash = hash
+                        alert[0].style.display = 'block'
+                        password[0].setAttribute('placeholder', 'Incorrect password')
+                        password[0].value = ''
+                    }
+                }
+                request.onerror = function () {
+                    parent.location.hash = hash
+                    alert[0].style.display = 'block'
+                    password[0].setAttribute('placeholder', 'Incorrect password')
+                    password[0].value = ''
+                }
+                request.send()
+            }
+
+            button[0].addEventListener("click", function () {
+                login(password[0].value)
+            })
+
+            document.onkeydown = function (e) {
+                e = e || window.event
+                if (e.keyCode == 13) {
+                    login(password[0].value)
+                }
+            }
+        </script>
+    </body>
 </html>
-
-        
