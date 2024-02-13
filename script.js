@@ -32,3 +32,16 @@ window.onscroll = function() {
     navbar.classList.remove(stickyClass);
   }
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+  var navLinks = document.querySelectorAll("#navbar a");
+  
+  navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+      navLinks.forEach(function(link) {
+        link.classList.remove("active");
+      });
+      this.classList.add("active");
+    });
+  });
+});
