@@ -33,6 +33,8 @@ window.onscroll = function() {
   }
 };
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
   var navLinks = document.querySelectorAll("#navbar a");
   
@@ -43,5 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
       });
       this.classList.add("active");
     });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var toggleButton = document.getElementById('toggleButton');
+  var menu = document.querySelector('#navbar ul');
+
+  toggleButton.addEventListener('click', function() {
+    menu.classList.toggle('active');
   });
 });
