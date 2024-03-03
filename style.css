@@ -115,17 +115,18 @@ body, html {
 .about-container {
   margin-top: 2em;
   display: flex;
-  gap: 1em;
-}
-
-.about-container > * {
-  flex-basis: 100%;
 }
 
 .about-content {
   text-align: center;
   font-size: 1.2rem;
+  justify-content: center;
 }
+
+.about-content img {
+  max-width: 50% ;
+}
+
 
 .about-content p, .details-content p, .transport-content p {
   padding: 0 5% 0 5%;
@@ -513,6 +514,11 @@ body, html {
   #navbar a {
     padding: 0.8em;
   }
+}
+
+.footer-text {
+  font-size: 0.5rem;
+  text-decoration: none;
 }
 
   
