@@ -132,6 +132,10 @@ body, html {
   padding: 0 5% 0 5%;
  }
 
+ p.about-text {
+  padding-top: 5%;
+}
+
 .section-title {
   display: flex;
   justify-content: center;
@@ -150,14 +154,19 @@ body, html {
   flex-basis: 100%;
 }
 
-.details-container img {
+.details-container img, .accomodation-content img {
   width: 50px;
   height: 50px;
 }
 
-.details-content {
+.details-content, .accomodation-content {
   font-size: 1.2rem;
   text-align: center;
+
+}
+
+.accomodation-content p {
+  padding: 0 7% 0 7%;
 
 }
 
