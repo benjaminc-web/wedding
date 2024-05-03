@@ -136,12 +136,22 @@ body, html {
   padding-top: 5%;
 }
 
+
 .section-title {
   display: flex;
   justify-content: center;
   align-items: center;
   color:#E2B34B;
   font-size: clamp(3.5rem, 4vw + 0.75rem, 10rem);
+  text-shadow: 2px 2px 4px rgba(224, 224, 224, 0.5);
+}
+
+.section-title-accommodation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#E2B34B;
+  font-size: clamp(3.1rem, 4vw + 1rem, 10rem);
   text-shadow: 2px 2px 4px rgba(224, 224, 224, 0.5);
 }
 
