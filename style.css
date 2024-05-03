@@ -137,7 +137,7 @@ body, html {
 }
 
 
-.section-title {
+.section-title, .section-title-accommodation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,12 +147,7 @@ body, html {
 }
 
 .section-title-accommodation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color:#E2B34B;
-  font-size: clamp(3.1rem, 4vw + 1rem, 10rem);
-  text-shadow: 2px 2px 4px rgba(224, 224, 224, 0.5);
+  font-size: clamp(2.4rem, 3.9vw + 0.75rem, 10rem);
 }
 
 .details-container {
@@ -514,6 +509,7 @@ body, html {
   font-weight: bold;
   background-color: #e6e6e6;
 }
+
 
 @media screen and (max-width: 600px) {
   #toggleButton {
